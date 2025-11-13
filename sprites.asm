@@ -139,13 +139,3 @@
 ;common practice to have
 ;graphical updates happen
 ;during vblank periods.
-;
-;
-;
-;
-
-
-
-
-
-

@@ -25,7 +25,7 @@ TXS ;Transfer X to Stack Pointer
 ;---ARTHIMETIC---
 INX ;increment X register
 INY ;increment Y register
-INC ;increment accumulator
+INC ;increment memory location
 
 DEX ;decrement X register
 DEY ;decrement Y register
