@@ -102,7 +102,7 @@ BIT ;Modifies flags
     ;registers
     ;
     ;Zero flag is set depending on the
-    ;result of (accumulator AND memory)
+    ;result of (accumulator AND (&) memory)
     ;
     ;Bits 7 and 6 are automatically loaded
     ;into the negative and overflow register flags
@@ -145,12 +145,12 @@ ORA ;Inclusive Or
 ;After comparing we can call one of
 ;the branch opcodes to check the result.
 ;
-;BEQ - Branch Equal To (Register == Comparison Value)
-;BCS - Branch Carry Set (Register > Comparison)
+BEQ ;Branch Equal To (Register == Comparison Value)
+BCS ;Branch Carry Set (Register > Comparison)
 ;   Call after BEQ, as the carry flag is
 ;   set in both possible outcomes, but
 ;   the zero flag is only set in one.
-;BCC - Branch Carry Clear (Register < Comparison)
+BCC ;Branch Carry Clear (Register < Comparison)
 
 
 CMP ;Compare to value in accumulator
