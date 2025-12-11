@@ -60,7 +60,7 @@ ROL buttons      0  0  0  0  0  0  0  0  0               0  0  0  0  A  B SEL ST
 
 The loop continues for a total of 8 times to read all buttons.  When it is done there is one button in each bit:
 
-bit:       7     6     5     4     3     2     1     0
+bit:       7     6     5     4     3     2     1     0  ; This is different for some reason on my handler.
 button:    A     B   select start  up   down  left right
 
 
