@@ -92,8 +92,20 @@ BCC ;Branch if Carry flag is not set
 BCS ;Branch if Carry flag is set
 BVC ;Branch if Overflow flag is not set
 BVS ;Branch if Overflow flag is set
-BPL ;Branch if positive
-BMI ;Branch if negative
+
+
+;This checks for signed integers,
+;so the negative flag is bit 7!
+;S Number
+;0 0000000
+;
+;1 1111111 = -128
+;0 1111111 = +128
+BPL ;Branch if positive, more specifically
+    ;branch if the negative flag is clear!!!
+
+BMI ;Branch if negative, more specifically
+    ;branch if the negative flag is set!!
 
 ;=COMPARING=
 BIT ;Modifies flags
